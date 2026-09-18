@@ -1,0 +1,1 @@
+import{a as e}from"./D3cFRNwI.js";async function o(t={}){const n=new URLSearchParams;t.community_id&&n.append("community_id",t.community_id),t.status&&n.append("status",t.status);const a=n.toString()?`?${n.toString()}`:"";return e(`/community-needs${a}`)}async function s(t){return e("/community-needs",{method:"POST",body:JSON.stringify(t)})}export{s as c,o as g};

@@ -1,0 +1,31 @@
+{
+  "name": "common-backend",
+  "version": "1.0.0",
+  "description": "COMMON - Community Shared Infrastructure Backend API (Hono + Cloudflare Workers + Supabase)",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "check": "tsc --noEmit",
+    "build": "tsc"
+  },
+  "keywords": [
+    "common",
+    "hono",
+    "cloudflare-workers",
+    "supabase",
+    "typescript"
+  ],
+  "author": "COMMON Team",
+  "license": "MIT",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.1",
+    "hono": "^4.7.4",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250224.0",
+    "typescript": "^5.7.3",
+    "wrangler": "^3.111.0"
+  }
+}

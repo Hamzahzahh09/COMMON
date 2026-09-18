@@ -1,0 +1,6 @@
+# Local development secrets for Cloudflare Workers (copy to .dev.vars for local wrangler dev)
+SUPABASE_URL="https://your-project-ref.supabase.co"
+SUPABASE_ANON_KEY="your-supabase-anon-key"
+SUPABASE_SERVICE_ROLE_KEY="your-supabase-service-role-key"
+CORS_ORIGIN="http://localhost:5173"
+ENVIRONMENT="development"
