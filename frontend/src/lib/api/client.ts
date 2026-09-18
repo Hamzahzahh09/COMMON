@@ -1,10 +1,11 @@
 import { get } from 'svelte/store';
 import { authState } from '../stores/auth';
-import { PUBLIC_API_BASE_URL } from '$env/static/public';
+import { env } from '$env/dynamic/public';
 
 const API_BASE_URL =
-  PUBLIC_API_BASE_URL ||
+  env.PUBLIC_API_BASE_URL ||
   (import.meta.env.VITE_API_BASE_URL as string) ||
+  (import.meta.env.PUBLIC_API_BASE_URL as string) ||
   'http://127.0.0.1:8787/api/v1';
 
 export type ApiResponse<T = any> = {
